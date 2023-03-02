@@ -1,0 +1,39 @@
+{
+	"id": "witherzombie",
+	"title": "Wither Zombie Game",
+	"description": "Test System for VTT",
+	"version": "0.0.1",
+	"compatibility": {
+		"minimum": "10",
+		"verified": "10",
+		"maximum": "10"
+	},
+	"authors": [
+		{
+			"name": "Kipi"
+		}
+	],
+	"scripts": [
+
+	],
+	"esmodules": [
+
+	],
+	"styles": [
+
+	],
+	"packs": [
+		{
+			"name": "monsters",
+			"label": "Enemies",
+			"path": "packs/monsters.db",
+			"type": "Actor"
+		},
+		{
+			"name": "items",
+			"label": "Items",
+			"path": "packs/items.db",
+			"type": "Item"
+		}
+	]
+}

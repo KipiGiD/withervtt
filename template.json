@@ -1,0 +1,108 @@
+{
+  "Actor": {
+    "types": [ "character", "zombie" ],
+    "templates": {
+      "group": {
+        "min": 0,
+        "value": 5,
+        "max": 5
+      },
+      "health": {
+        "min": 0,
+        "value": 5,
+        "max": 5
+      },
+      "armor": {
+        "min": 0,
+        "value": 10,
+        "max": 20
+      },
+      "skillstemplate": {
+        "min": 1,
+        "value": 1,
+        "max": 5
+      }
+    },
+    "character": {
+      "templates": [ "health", "armor" ],
+      "skills": {
+        "melee": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "pistol": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "rifle": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "shotgun": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "throwing": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "bowcrossbow": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "movement": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "stealth": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "lockpick": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "medic": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "perception": {
+          "templaste": [ "skilltemplate" ]
+        },
+        "tinkering": {
+          "templaste": [ "skilltemplate" ]
+        }
+      },
+      "infection": {
+        "min": 0,
+        "value": 0,
+        "max": 1
+      }
+    },
+    "zombie": {
+      "templates": [ "group", "health", "armor" ]
+    }
+  },
+  "Item": {
+    "types": [ "consumable", "weapon" ],
+    "templates": {
+      "skill": {
+        "skillname": ""
+      },
+      "damage": {
+        "dices": 1,
+        "divider": 1,
+        "bonus": 0
+      },
+      "clipsize": {
+        "min": 0,
+        "value": 0,
+        "max": 100
+      },
+      "amount": {
+        "min": 0,
+        "value": 1,
+        "max": 100
+      }
+    },
+    "pistol": {
+      "templates": [ "skill", "damage", "clipsize" ]
+    },
+    "assaultrifle": {
+      "templates": [ "skill", "damage", "clipsize" ]
+    },
+    "huntingrifle": {
+      "templates": ["skill","damage","clipsize"]
+    }
+  }
+}
